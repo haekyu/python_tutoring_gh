@@ -1,0 +1,224 @@
+- 파이썬 2.* --> 3.*
+	- anaconda 
+		+ 다양한 scientific package
+			* numpy
+				- 행렬 곱
+				- regression
+				- ...
+			* pandas
+			* scipy
+				- normal dist/ gausi
+			* tensorflow
+	- terminal
+		+ 명령을 내리는 창
+		+ python 실행을 시킬 것
+- 기본
+	- 실행
+	- primitive 데이터
+		+ 프로그램 : 데이터 + 잘 쓰면 --> 원하는 결과
+		+ 데이터 타입
+			* int (정수, -43335, 0, 234234)
+			* float (실수, 0.23423)
+			* string (문자, 'asdfsdf', '234')
+			* boolean (참/거짓, True, False)
+	- interpreter
+	- 기본적인 연산
+		- 비교 연산
+			* == '같다'
+				* cf) = '값을 대입한다'
+				* 3 == 3
+				* x = 3 (x라는 변수에 3을 대입)
+			* 숫자 비교연산
+				+ >
+				+ <
+				+ >= (=> XXXXX)
+				+ <= (=< XXXXX, 무조건 = 는 뒤에)
+		- 숫자 연산
+			* int, float
+			* + - * / **
+			* % (modular: 나머지)
+				ex) 10 % 3 = 1
+			* // (몫)
+			* round(3.2323) 반올림
+			* 형 변환
+				* int(3.2323) 소수점 무시
+				* float(3) --> 3.0
+		- string 연산
+			* +
+				- 문자 이어주기 (concatenation)
+				- '234' + 'aaa' ==> '234aaa'
+			* *
+				- 'abc' * 3 ==> 'abcabcabc'
+			* indexing
+				- 긴 문자의 특정 위치를 찝어내고 싶을 때
+				- str[9]
+				- 위치를 index
+				- 'asldfniwenfjalsdkfja'
+				- 'abcd'[-1] = 'd'
+			* slicing
+				- 긴 문자의 특정 범위를 찝어내고 싶을 때
+				- str[from 이상:to 미만]
+				- 'abcd'[0:2] = 'ab'
+			* length
+				- len('sdfsdf')
+		- boolean 연산 (bool)
+			* True (1) / False (0)
+			* not
+				- not True ==> False
+				- not False ==> True
+			* and == multiply == intersection
+				- True and True == True
+					1 * 1 = 1
+				- True and False == False
+				- False and True == False
+				- False and False == False
+					0 * 0 = 0
+			* or == add == union
+				- True or True == True
+					1 + 1 = 1
+				- True or False == True
+					1 + 0 = 1
+				- False or True == True
+				- False or False == False
+	- 기본적인 문법
+		- 조건문
+			* 문법! -> :, indent (띄어쓰기 두 개 / 네 개 / 탭)
+			* ver1
+			if <조건>:
+				<do>
+			* ver2
+			if <조건>:
+				<do1>
+			else:
+				<do2>
+			* ver3
+			if <조건1>:
+				<do1>
+			else:
+				if <조건2>:
+					<do2>
+				else:
+					if <조건3>:
+						<do3>
+					else:
+						<do4>
+
+			* ver4
+			elif??? == else if
+			if <조건1>:
+				<do1>
+			elif <조건2>:
+				<do2>
+			elif <조건3>:
+				<do3>
+			else:
+				<do4>
+				print('ERR: 어떤 에러인지')		
+
+		- loop문
+			: 실행을 반복하는 statement
+			: for
+				* 문법! :, indent
+				for <iteration 변수> in <iteration 변수가 밟아 갈 값들>:
+					<do>
+				예시)
+				result = 0
+				for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+					result = result + i
+				언제 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 이걸 하냐..
+				그래서 range()라는 함수를 사용.
+				- range(3) == 0이상부터 3 미만까지 == [0, 1, 2]
+				- range(1, 11) == 1이상부터 11 미만까지 == [0, 1, ...., 10]
+				- range(1, 10, 3) == 1이상부터 11미만까지 3 step으로 == [1, 4, 7]
+			: while
+				* 문법
+				while <조건>:
+					<do>
+				* 조건이 맞으면 do를 해라.
+	
+
+- 진행
+	- 1일
+		: 기본적인 것들
+	- 2일
+		: loop 제어
+			- 중도 중단
+			- 패스
+		: 복잡한 데이터 다루는 것	
+			- list / tuple / array
+		: 함수
+			- ()
+			- 만드는 것
+	- 3일
+		: 조금 더 복잡한 자료구조를 다루려고 함
+		: dictionary
+		: 속도
+	- 4일
+		: 자료형 디자인
+		: class
+
+
+- 자주 쓰는 언어?
+	- C / C++
+		* 시스템
+			- CPU, memory, 
+		* 처음 언어를 배우는 사람
+	- java
+		* 유명
+		* 산업
+	- python
+		* 구현 빠름
+		* 남들이 많이 잘 만들어놔서
+		* 딥러닝 머신러닝
+	- Ocaml
+		* 함수형 언어
+		* 정확
+	- VHDL / Verilog
+		* X
+		* 하드웨어 언어
+
+- 전공
+	- 데이터마이닝
+		- 추천시스템
+
+- 괄호
+	- () : 함수의 인풋
+	- [] : index
+	- {} : dictionary
+
+- terminal 
+	- shell
+
+- 주석: 코드에서 실행하지 말고 무시
+	- 라인별로 #
+		- sublime에서는 블럭 잡고 'cmd + /' 하면 한방에 주석 처리
+	- ''' ㄴㅇㄹㄴㅇㄹㅁㅇㄴㄹ '''
+- linux command
+	- clear
+	- ls
+		== file (폴더 / 일반파일)의 list를 보여줌.
+	- pwd
+		== 현재 위치의 절대 경로 출력
+	- cd
+		== change directory
+		== cd <원하는 위치>
+		- 파일 위치(= 경로 = path)를 표현하는 방법
+			1. 절대경로
+				: pwd
+			2. 상대경로
+				: .  : 현재
+				: .. : 상위
+	- mkdir
+		== make directory
+		mkdir <이름>
+	- mv
+		== move
+		mv <old 경로> <new 경로>
+	- cp
+		== copy
+		cp <from> <to>
+		== 그냥하면 (옵션이 없으면) 일반 파일 copy
+		== 폴더를 copy하려면 -r 이라는 옵션을 줘야 함
+	- rm
+		== remove
+		== 그냥 지워지고 / 아니면 적어도 물어보게끔 만들어야 함.
