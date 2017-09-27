@@ -1,0 +1,158 @@
+- 숙제 관련해서 2가지
+	* absolute
+	* flag 라는 단어
+
+- 오늘 배울 것
+	* while / for 좀 더 해야할 것
+		- 제어
+			+ 중도 중단
+				* break
+			+ skip
+				* continue
+		- enumerate
+			+ 순서를 센다
+			+ for 문
+			+ tuple로 (th, element)
+		- zip
+			+ 한꺼번에 묶어서 iteration 진행
+			+ sparse format 행렬에서 많이 쓰임
+			+ 길이가 같은 것들만 zip으로 묶을 수 있다
+	* string formatting
+		- string 만드는 / 사용하는 pattern
+		- %d --> int
+		- %lf --> float
+		- %s --> string
+		- %s 써도 됨 --> bool
+		- 'asdkf ksldf %s lasskldfl %05d %.2lf' % ('fsdf', 3, 3)
+		- for i in range(10):
+			filename = 'sldkfnklsdjf_%d.txt' % (i)
+	* 시간
+		- import time
+		- curr_time = time.time()
+	* series 자료형
+		- 순서가 있음
+			+ set은 순서 x
+			+ index?
+				== 몇 번째?
+		+ list
+			- ex) lll = [1, 2, 3, 4]
+			- indexing
+				: list의 특정 위치의 값을 딱 찝어내고 싶을 때
+				lll[0] == 1 (read)
+				lll[0] = 0 (write, =)
+			- slicing
+				: list의 특정 범위의 값을 찝어내고 싶을 때
+				lll[0: 3] = [1, 2, 3]
+			- 함수
+				+ append
+					= 뒤에다 붙여주기
+					lll.append(내가 붙이고 싶은 원소)
+				+ len()
+				+ delete
+					del lll[3]
+		+ tuple
+			- ex) ttt = (1, 2, 3, 4)
+			- 수정이 안됨.
+			- indexing / slicling (대신 read만 됨)
+		+ array
+			- 수학적인 series를 다룰 때
+			- import numpy
+			- numpy.array(list)
+			- : == 모든 것 (혹은 그 축을 따라서)
+				ex) m_arr = [e1, e2, e3]
+				>>> m_arr
+					array([[2, 3],
+					       [4, 5],
+					       [6, 7]])
+				>>> m_arr[:, 1]
+					array([3, 5, 7])
+			- 3차원
+				- 2차원의 list
+				- axis!!!!!!
+				>>> layer0
+				array([[0, 1, 2],
+				       [3, 4, 5],
+				       [6, 7, 8]])
+
+				>>> layer1 = layer0 +1
+				>>> layer2 = layer0 +2
+
+				>>> layer1
+				array([[1, 2, 3],
+				       [4, 5, 6],
+				       [7, 8, 9]])
+
+				>>> layer2
+				array([[ 2,  3,  4],
+				       [ 5,  6,  7],
+				       [ 8,  9, 10]])
+
+				>>> cube = numpy.array([layer0, layer1, layer2])
+				>>> cube
+				array([[[ 0,  1,  2],
+				        [ 3,  4,  5],
+				        [ 6,  7,  8]],
+
+				       [[ 1,  2,  3],
+				        [ 4,  5,  6],
+				        [ 7,  8,  9]],
+
+				       [[ 2,  3,  4],
+				        [ 5,  6,  7],
+				        [ 8,  9, 10]]])
+				>>> cube[2,2,2]
+				10
+				>>> cube[2,2,:]
+				array([ 8,  9, 10])
+				>>> cube[2,:,2]
+				array([ 4,  7, 10])
+				>>> cube[:,2,2]
+				array([ 8,  9, 10])
+				>>> numpy.sum([1, 2, 3])
+				6
+				>>> numpy.sum(cube, axis=0)
+				array([[ 3,  6,  9],
+				       [12, 15, 18],
+				       [21, 24, 27]])
+
+	* 함수
+		+ 일의 단위를 나눔
+		+ term
+			* parameter
+				- f(x) = x + 1
+				- x 는 parameter
+			* default parameter
+				- 기본으로 셋팅된 paramter
+				- normal parameter 뒤에 있어야 함.
+			* argument
+				- x 의 값
+				ex) f(x) = x + 1
+					f(2) == 3
+					x는 parameter
+					2는 argument
+			* return
+				- 나오는 값
+				- output
+				- 위 예제에서는 x + 1
+			* void
+				- return이 없는 것
+				- return이 None인 것
+		+ 함수 만들기
+			* def <함수이름>(<인풋>):
+				ㄴㅇㄹㄴㅇㄹㄴㅇㄹ
+		+ 함수 사용
+			<함수이름>(<input>)
+			ex) sum([1, 2, 3])
+			리턴을 해주는 함수의 아웃풋 받아오고 싶으면
+			result = sum([1, 2, 3])
+
+	
+- 다음시간에 배울 것
+	* call
+	* call by value / call by reference
+	* list로 만들 수 있는 자료 구조        
+		- stack
+		- queue 
+	* dictionary
+	* Hash table 이라는 자료 구조
+
