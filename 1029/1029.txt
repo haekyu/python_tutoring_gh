@@ -1,0 +1,84 @@
+- 오늘 배울 것
+	+ 함수
+		- call by value
+		- call by reference
+		- call
+			+ 함수를 "부르는" 행동
+			+ 함수를 "실행시키는" 행동
+		- value
+			= 값
+		- reference	
+			= 메모리상 위치 
+	+ 자료구조
+		= 여러 가지 자료들을 담고있는 그릇
+			ex) list
+		- Stack
+			= 'First in, last out'
+			= 'Last in, first out'
+			ex) back space
+			ex) 인터넷 뒤로가기 버튼
+			- push = 값 넣기
+			- pop = 값 빼기
+		- Queue
+			= 'First in, first out'
+			ex) 줄 서기
+			- Enqueue = 값 넣기
+			- Dequeue = 값 빼기
+		- Hash table
+	+ ****dictionary****
+		- Hash table
+		- 검색에 유리한 자료구조 == 검색이 빠르다
+		- terms
+			+ key : 검색어
+			+ value : 검색어에 매칭되는 값
+				- value는 단순한 값 뿐만 아니라, list, dict 도 가능
+				>>> d["crazy"] = dict()
+				>>> d["crazy"]["shape"] = "cicle"
+				>>> d["crazy"]["color"] = "black"
+				>>> d["crazy"]["ssf"] = "234234"
+				>>> d["crazy"]
+				{'ssf': '234234', 'shape': 'cicle', 'color': 'black'}
+				>>> d
+				{'crazy': {'ssf': '234234', 'shape': 'cicle', 'color': 'black'}, 'apple': 'red', 'fig': 'pink'}
+		- dict 에 값을 넣어주고 싶다
+			+ d = dict()
+			  d[<key>] = <value>
+			  d["apple"] = "red"
+			  dd["red"] = ["apple", "tomato"]
+		- dict 내의 값을 읽고 싶다
+			+ d[<key>] --> matching된 value가 나온다
+		- key의 membership
+			+ in
+			+ not in
+			>>> d = {}
+			>>> d["apple"] = "red"
+			>>> d["fig"] = "pink"
+			>>> d
+			{'apple': 'red', 'fig': 'pink'}
+			>>> "fig" in d
+			True
+			>>> "pink" in d
+			False
+		- dict 내의 key를 뽑아내고 싶다
+			d.keys()
+		- dict 내의 value를 뽑아내고 싶다
+			d.values()
+
+- 숙제
+	+ in (집합 기호 in E)
+
+- 복습
+	+ list
+		- zip
+			+ 
+		- enumerate
+	+ array
+		- 3차원 ...
+	+ loop
+	+ 함수
+		- 함수 만드는 방법
+		- 리턴
+		- parameter
+		- default parameter
+			f(x = 3)
+
